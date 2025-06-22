@@ -4,7 +4,7 @@ metadata:
   name: edge
   namespace: gateway-system
 spec:
-  gatewayClassName: envoy-gw
+  gatewayClassName: envoy-gw-v2
   listeners:
     - name: https
       protocol: HTTPS

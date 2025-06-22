@@ -9,13 +9,13 @@ spec:
       sectionName: https
   rules:
     - matches:
-        - path:
-            type: PathPrefix
-            value: /healthz
+        - path: { type: PathPrefix, value: /healthz }
+      backendRefs:
+        - name: echo-204       # NEW backend
+          port: 80
       filters:
         - type: ResponseHeaderModifier
           responseHeaderModifier:
             set:
               - name: Content-Length
                 value: "0"
-      backendRefs: []        # direct-response; no service needed

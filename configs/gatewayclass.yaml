@@ -1,6 +1,6 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: GatewayClass
 metadata:
-  name: envoy-gw
+  name: envoy-gw-v2
 spec:
-  controllerName: envoyproxy.io/gatewayclass-controller
+  controllerName: gateway.envoyproxy.io/gatewayclass-controller
