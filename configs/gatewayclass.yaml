@@ -3,4 +3,4 @@ kind: GatewayClass
 metadata:
   name: envoy-gw
 spec:
-  controllerName: gateway.envoyproxy.io/gatewayclass-controller
+  controllerName: envoyproxy.io/gatewayclass-controller
